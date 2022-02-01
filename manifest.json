@@ -1,0 +1,21 @@
+{ 
+  "name": "sample domain blocker", 
+  "version": "1.0", 
+  "description": "A simple domain blocker", 
+ 
+  "declarative_net_request": { 
+    "rule_resources": [{ 
+      "id": "ruleset_1", 
+      "enabled": true, 
+      "path": "rules.json" 
+    }] 
+  }, 
+ 
+  "permissions": [ 
+    "declarativeNetRequest" 
+  ], 
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  }
+}  
